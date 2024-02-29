@@ -1,7 +1,15 @@
 <!DOCTYPE html>
+
+<title>Perks Layer 7 Dstat</title>
+<meta content="Click this" property="og:title" />
+<meta content="This is a Layer 7 dstats used to measure requests on pentesting.lol" property="og:description" />
+<meta content="https://embed.com/this-is-the-site-url" property="og:url" />
+<meta content="https://embed.com/embedimage.png" property="og:image" />
+<meta content="#43B581" data-react-helmet="true" name="theme-color" />
+
 <html>
    <head>
-      <title>DSTAT</title>
+      <title>Layer 7 Dstat Made with Love</title>
       <meta charset='UTF-8'>
       <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
       <meta name='viewport' content='width=device-width'/>
@@ -9,25 +17,17 @@
      <link rel='stylesheet' type='text/css' href='https://use.fontawesome.com/releases/v5.8.1/css/all.css'>
    </head>
    <body>
-<div class='hamburger-menu'>
-  <input id='menu-toggle' type='checkbox'/>
-  <label class='menu-btn' for='menu-toggle'>
-    <span></span>
-  </label>
-  <ul class='menu-box'>
-    <a class='menu-item fas fa-home' href=''> Главная</a>
-  </ul>
       <center>
-         <div style='background: #06122f; width: 90%; margin: 20px 20px 20px 20px; border-radius: 15px' id='menu-l7'>
-            <h2 style="color: white">Live Layer 7 DSTAT</h2>
+         <div style='background: #000000; width: 90%; margin: 20px 20px 20px 20px; border-radius: 15px' id='menu-l7'>
+            <h2 style="color: rgb(255, 255, 255)">Live L7 DSTAT</h2>
             <h3><span id='attack-address'></span></h3>
-            <p><button type='button' class='green-btn' onclick='copyAddress()'>Скопировать URL-Адрес</button></p>
+            <p><button type='button' class='green-btn' onclick='copyAddress()'>Copy URL</button></p>
             <div id='graph' style='border-radius: 15px'></div>
             </div>
-         <div style='background: #06122f; width: 90%; weight: 90%; margin: 20px 20px 20px 20px; border-radius: 15px' id='stats'>
-            <h2 style="color: white">Статистика</h2> 
-            <p>Самое большое Количество запросов за секунду: <span id='max_requests'></span></p>
-            <p>Количество запросов за день: <span id='total_day_requests'></span></p>
+            <div style='background: #000000; width: 90%; height: 90%; margin: 20px 20px 20px 20px; border-radius: 15px' id='stats'>
+            <h2 style="color: rgb(255, 255, 255)">Stats</h2> 
+            <p>Highest Number of Requests: <span id='max_requests'></span></p>
+            <p>Requests Per Day: <span id='total_day_requests'></span></p>
        </div>
       </center>
    </body>
