@@ -14,7 +14,7 @@ app.use(express.static(path.join(__dirname, 'assets/')))
 app.get('/attack', (req, res) => {
 	all_requests++
 	per_requests++
-	res.sendStatus(403)
+	res.write("Sup skid")
 })
 
 setInterval(async() => {
