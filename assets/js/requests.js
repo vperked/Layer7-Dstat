@@ -35,7 +35,7 @@ const socket = io(),
 		series: [{
 			type: 'area',
 			name: 'Number of Requests',
-			color: '#5b4ba3',
+			color: '#ffffff',
 			data: []
 		}]
 	},
@@ -55,7 +55,7 @@ function getStringCount(count) {
 	let i = 0 === count ? count : Math.floor(Math.log(count) / Math.log(1000)),
 		result = parseFloat((count / Math.pow(1000, i)).toFixed(2))
 	if(i >= 17) return '∞'
-	result += ['Thousand', 'Million', 'Billion', 'Trillion',][i]
+	result += [' Thousand', ' Million', ' Billion', ' Trillion',][i]
 	result = result.replace(/e/g, '')
 	result = result.replace(/\+/g, '')
 	result = result.replace(/Infinity/g, '∞')
